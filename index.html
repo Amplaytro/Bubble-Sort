@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Bubble Sort</title>
+	<meta charset = "UTF-8" />
+	<meta name = "viewport"
+		content = "width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+	<h1 style="text-align: center">Bubble Sort</h1>
+	<div id = "array"></div>
+	<br>
+
+	<div style = "text-align: center">
+	<label for = "fname">
+		Enter the element to be added in the array:
+	</label>
+	<input type = "text" id = "fname"
+			name = "fname">
+	<br><br>
+
+	<button id = "btn" onclick="add()">Add</button>
+	<button id = "btn2" onclick="BubbleStep(arr)">Next</button>
+	<button id = "btn3" onclick="BubbleSort(arr)">Solve</button>
+	<button id = "btn4" onclick="initialize()">Reset</button>
+	
+	<br><br>
+
+	<div>
+		<li id = "l1">Array to be sorted in ascending order.</li>
+		<li id = "l2">Start from first index and move left to right.</li>
+		<li id = "l3">Compare selected index (i) with next (i+1) index.</li>
+		<li id = "l4">If value at index (i) is greater than the value at index (i+1) then exchange and increment selected index (i) by 1</li>
+		<li id = "l5">If value at index (i) is less than or equal to value at index (i+1) simply increment selected index by 1</li>
+		<li id = "l6">Select the first index 0</li>
+	</div>
+
+	<script src = "script.js"></script>
+</body>
+</html>
